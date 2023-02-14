@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href = "styles.css">
+</head>
+<body>
+    <h1 id="'title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our platform.</p>
+    <form id="survey-form">
+        <label id="name-label">Name <input id="name" type="text" placeholder="Enter your full name" required></label>
+        <label id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required></label>
+        <label id="number-label">Age (Optional) <input id="number" type="number" placeholder="Enter your age" min=12 max=120 required></label>
+        
+        <label>Select what describes you the best
+            <select id="dropdown" placeholder="Select One" required>
+                <option >Freelance Developer</option>
+                <option>IT Professional</option>
+                <option>Non-tech professional</option>
+                <option>Entrepreneur</option>
+                <option>Student</option>
+                <option>Retired</option>
+                <option>Alien</option>
+            </select>
+        </label>
+
+        <label class="rating">How would you rate our services?
+            <label class="inline"><input type="radio" name="rating" value = 5> 5</label>
+            <label class="inline"><input type="radio" name="rating" value = 4> 4</label>
+            <label class="inline"><input type="radio" name="rating" value = 3> 3</label>
+            <label class="inline"><input type="radio" name="rating" value = 2> 2</label>
+            <label class="inline"><input type="radio" name="rating" value = 1> 1</label>
+        </label>
+
+        <label class = 'feedback'>What areas can we improve in? (Select all that apply):
+            <label><input type="checkbox" value="customer-service"> Customer Service</label>
+            <label><input type="checkbox" value="delivery-time"> Delivery Time</label>
+            <label><input type="checkbox" value="cancellation-policy"> Cancellation Policy</label>
+        </label>
+        
+        <label id="additional-comments">Please provide additional feedback, if any.
+            <textarea id="comments" row=3 col = 30></textarea>
+        </label>
+        <button id="submit">Submit</button>
+        <!-- <input type="submit" value="Submit Request"> -->
+    </form>
+</body>
+</html>
